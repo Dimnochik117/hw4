@@ -196,24 +196,22 @@ img {
 }
 
 /* hero */
-.banner {
+.start {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+
     display: block;
     justify-content: center;
     align-items: center;
     max-width: 1600px;
-    height: 600px;
+    
     background-color: #000000;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/background.jpg);
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-}
-
-.start {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
 
 }
 
@@ -368,8 +366,8 @@ background-color: #F5F4FA;
 .text {
 
     display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-align: center;
 }
 
@@ -388,7 +386,8 @@ background-color: #F5F4FA;
 /* icons*/
 .team-item-icon {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 22px;
 }
 
 .team-link-icon {
@@ -463,7 +462,7 @@ background-color: #F5F4FA;
     color: #212121;
     justify-content: center;
 
-
+    
 }
 
 .portfolio .portfolio-list+.portfolio-list {
@@ -477,51 +476,49 @@ background-color: #F5F4FA;
     font-size: 16px;
     line-height: 1.62;
 
-
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px;
 
-
-
     cursor: pointer;
     background-color: #f5f4fa;
     border: 1px solid transparent;
-
+    border-radius: 4px;
 
 
 
 }
 
-.portfolio-button {}
-
 .portfolio-button:hover,
 .portfolio-button:focus {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 
-    color: #FFFFFF
+    color: #ffffff;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+
 }
 
 /* кнопки */
-
-
 
 
 .main-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 56px;
+    margin-top: 56px;   
 }
 
-.main-item {
+.main-link {
     width: calc((100%-60px)/3);
-
 }
-
+.main-item:hover, .main-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+    
 .main-title {
     margin-bottom: 4px;
     font-weight: 700;
@@ -550,13 +547,14 @@ background-color: #F5F4FA;
 
 /* подвал */
 .fotter {
-
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
 
 .container.fotter {
-    padding-top: 60px;
-    padding-bottom: 60px;
+   padding: 0; 
+    align-items: baseline;
     display: flex;
 }
 
@@ -594,6 +592,9 @@ background-color: #F5F4FA;
     color: var(--normal-color)
 }
 
+.fotter-nav .white{
+    color: var(--normal-color);
+}
 .fotter-nav {
     margin-top: 9px;
 
@@ -634,12 +635,11 @@ background-color: #F5F4FA;
     color: var(--normal-color);
 
     margin: 0% auto;
-padding: 20px 0px 20px;
-
 
 }
 
 .dopinfo-item {
+    margin-top: 20px;
     display: flex;
     justify-items: center;
     gap: 10px;
